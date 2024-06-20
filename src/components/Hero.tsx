@@ -3,6 +3,7 @@ import React from "react";
 import { cn } from "@/utils/cn";
 import { Spotlight } from "./ui/Spotlight";
 import { Button } from "./ui/moving-border";
+import { HeroContent } from "@/content/Hero_content";
 
 function Hero() {
   return (
@@ -13,12 +14,10 @@ function Hero() {
       />
       <div className="p-4 relative z-10 w-full ">
         <h1 className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-          Master the art of Music
+          {HeroContent.title}
         </h1>
         <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto">
-          Dive into comprehensive Music courses and get ready to immerse
-          yourself in the world of music. Whether you are a beginner or an
-          expert, our courses will help you master the art of music.
+            {HeroContent.des}
         </p>
         <div className="mt-5">
           <Link href={"/courses"}>
@@ -27,7 +26,7 @@ function Hero() {
               borderRadius="1.75rem"
               className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
-              Explore Courses
+              {HeroContent.button}
             </Button>
           </Link>
         </div>

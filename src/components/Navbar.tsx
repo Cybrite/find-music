@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
+import { course , nav} from "@/content/Nav_content";
 
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
@@ -15,23 +16,23 @@ function Navbar({ className }: { className?: string }) {
           <MenuItem
             setActive={setActive}
             active={active}
-            item="Home"
+            item={nav[0]}
           ></MenuItem>
         </Link>
-        <MenuItem setActive={setActive} active={active} item="Courses">
+        <MenuItem setActive={setActive} active={active} item={nav[1]}>
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/courses">All courses</HoveredLink>
-            <HoveredLink href="/courses">Basic Music Theory</HoveredLink>
-            <HoveredLink href="/courses">Advanced Composition</HoveredLink>
-            <HoveredLink href="/courses">SongWriting</HoveredLink>
-            <HoveredLink href="/courses">Music Production</HoveredLink>
+            {course.map((item) => (
+              <HoveredLink href={"/courses"} key={item}>
+                {item}
+              </HoveredLink>
+            ))}
           </div>
         </MenuItem>
         <Link href={"/contact"}>
           <MenuItem
             setActive={setActive}
             active={active}
-            item="Contact Us"
+            item={nav[2]}
           ></MenuItem>
         </Link>
       </Menu>
