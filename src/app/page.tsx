@@ -1,3 +1,4 @@
+import Featured from "@/components/Featured";
 import Hero from "@/components/Hero";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <body>
       <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.05]">
         <Hero />
+        <Featured />
       </main>
     </body>
   );
