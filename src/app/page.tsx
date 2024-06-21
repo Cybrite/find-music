@@ -2,6 +2,7 @@ import { Carousel } from "@/components/Carousel";
 import Featured from "@/components/Featured";
 import Hero from "@/components/Hero";
 import StickyCard from "@/components/StickyCard";
+import UpcomingWebinars from "@/components/UpcomingWebinars";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <Featured />
         <StickyCard/>
         <Carousel/>
+        <UpcomingWebinars/>
       </main>
     </body>
   );
