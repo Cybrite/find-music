@@ -15,8 +15,8 @@ export default function Home() {
         <Instructors/>
         <Featured />
         <StickyCard/>
-        <Carousel/>
         <UpcomingWebinars/>
+        <Carousel/>
         <Footer/>
       </main>
     </body>

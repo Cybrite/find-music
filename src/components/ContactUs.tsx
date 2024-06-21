@@ -12,7 +12,7 @@ function ContactUs() {
   }
 
   return (
-    <div className="h-auto md:h-[50rem] bg-gray-900 flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0 text-center">
+    <div className="h-full md:h-[50rem] bg-gray-900 flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0 text-center">
       <h1 className="text-4xl md:text-7xl font-bold text-white">Contact Us</h1>
 
       <form onSubmit={handleSubmit} className="flex flex-col py-2 ">

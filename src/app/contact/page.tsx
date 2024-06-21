@@ -2,7 +2,8 @@ import ContactUs from "@/components/ContactUs";
 
 function page() {
   return (
-   <ContactUs/>
+    <div className="w-full h-[50rem]">
+   <ContactUs/></div>
   );
 }
 
