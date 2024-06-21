@@ -55,7 +55,7 @@ import { musicCourses } from "@/content/Card_content";
 
 function StickyCard() {
   return (
-    <div className="p-10 ">
+    <div className="p-10 body">
       <StickyScroll content={musicCourses} />
     </div>
   );
