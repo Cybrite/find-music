@@ -17,6 +17,7 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
+        "meteor-effect": "meteor 5s linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",
         shimmer: "shimmer 2s linear infinite",
         scroll:
@@ -44,6 +45,14 @@ const config: Config = {
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+        meteor: {
+          "0%": { transform: "rotate(205deg) translateX(0)", opacity: "0.5" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(205deg) translateX(-2000px)",
+            opacity: "0",
           },
         },
       },
