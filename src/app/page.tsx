@@ -1,5 +1,6 @@
 import { Carousel } from "@/components/Carousel";
 import Featured from "@/components/Featured";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Instructors from "@/components/Instructors";
 import StickyCard from "@/components/StickyCard";
@@ -16,6 +17,7 @@ export default function Home() {
         <StickyCard/>
         <Carousel/>
         <UpcomingWebinars/>
+        <Footer/>
       </main>
     </body>
   );

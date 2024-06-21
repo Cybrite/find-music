@@ -7,7 +7,7 @@ import { HeroContent } from "@/content/Hero_content";
 
 function Hero() {
   return (
-    <div className="h-auto md:h-[40rem] dark:bg-black bg-white  dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2]  w-full rounded-sm flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0 text-center">
+    <div className="h-auto md:h-[40rem] dark:bg-black bg-white  dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2]  w-full rounded-sm flex flex-col items-center justify-center relative overflow-hidden mx-auto py-2 md:py-0 text-center">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
