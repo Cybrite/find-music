@@ -91,7 +91,7 @@ export const WavyBackground = ({
     drawWave(5);
     animationId = requestAnimationFrame(render);
   };
-
+  
   useEffect(() => {
     init();
     return () => {
